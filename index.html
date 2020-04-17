@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/customstyle.css" rel="stylesheet">
 
   </head>
 
@@ -30,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Amirah Islam</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">AMIRAH <span></span> ISLAM</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -50,7 +51,8 @@
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" onClick="javascript:window.open('mailto:amirahaislam@gmail.com', 
+              'mail');event.preventDefault()" href="mailto:amirahaislam@gmail.com">Email</a>
             </li>
           </ul>
         </div>
@@ -59,12 +61,41 @@
 
     <!-- Header -->
     <header class="masthead">
+      
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome!</div>
-          <div class="intro-lead-in">স্বাগতম!</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Find Out More</a>
+          <!-- <div class="intro-lead-in">Welcome!</div> -->
+          <!--Card-->  <container class="cardbody">
+    <div class='card-wrapper'>
+        <div class='card' data-toggle-class='flipped'>
+          <div class='card-front'>
+            <div class='layer'>
+              <h1>Hi! I'm Amirah.</h1>
+              <h1>(Aa-mee-rah)</h1>
+              <p class="clickme">*Click me*</p>
+              <div class='corner'></div>
+              <div class='corner'></div>
+              <div class='corner'></div>
+              <div class='corner'></div>
+            </div>
+          </div>
+          <div class='card-back'>
+            <div class='layer'>
+              <div class='top'>
+               <h2>I’m a Front End and UI Developer; I’ve worked with clients such as Dell and 
+                 Office Depot/Office Max to create online dynamic adds for their campaigns using 
+                 HTML, CSS and Javascript. I'm currently freelancing and working on personal
+                 projects using React JS. </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+
+          <!-- <div class="intro-lead-in">স্বাগতম!</div> -->
+          <!-- <div class="intro-heading text-uppercase">It's Nice To Meet You</div> -->
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Portfolio</a>
         </div>
       </div>
     </header>
@@ -107,6 +138,34 @@
       </div>
     </section> -->
 
+    <!-- Clients -->
+    <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto wundeman" id="wunderman" src="img/logos/wunderman.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto dell" id="dell" src="img/logos/dell_logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto odom" id="odom" src="img/logos/odom_2.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto diu" id="diu" src="img/logos/diu_logo_2.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
       <div class="container">
@@ -132,12 +191,12 @@
             <!-- </a> -->
             
             <div class="portfolio-caption">
-              <h4>Assignments</h4>
+              <h4>Projects</h4>
               <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="" href="projects.html">
+            <a class="portfolio-link" data-toggle="" href="https://secretsupperclub.herokuapp.com/">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -146,7 +205,7 @@
               <img class="img-fluid" src="img/portfolio/logo.png" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Projects</h4>
+              <h4>Secret Supper Club</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -181,13 +240,13 @@
 
           <!-- This the Client Section -->
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <a class="portfolio-link" data-toggle="" href="aboutclients.html">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/katyhouse.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/clients.png" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Clients</h4>
@@ -296,7 +355,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                    <img class="rounded-circle img-fluid" src="img/square_headshot.jpg" alt="">
+                    <img class="rounded-circle img-fluid" src="img/mirasquare.jpg" alt="">
                   <!-- <h4>Be Part
                     <br>Of Our
                     <br>Story!</h4> -->
@@ -731,6 +790,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Custom Card scripts -->
+    <script src="js/card.js"></script>
 
   </body>
 
